@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import SideBar from './components/sideBar/SideBar';
+import Authentication from './components/auth/Authentication';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <SideBar />
+      <Routes>
+        <Route exact path="/auth" element={<Authentication />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
