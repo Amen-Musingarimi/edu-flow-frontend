@@ -143,7 +143,9 @@ const SideBar = () => {
           </Link>
           <Link className={classes.homeLink}>
             <BiSolidLogOut />
-            <p className={classes.homeText}>Logout</p>
+            <p className={`${classes.homeText} ${classes.logoutText}`}>
+              Logout
+            </p>
           </Link>
         </div>
       </div>
