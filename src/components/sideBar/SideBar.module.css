@@ -8,6 +8,11 @@
   width: 20%;
   padding: 2%;
   color: #fff;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
 }
 
 .linksContainer,
