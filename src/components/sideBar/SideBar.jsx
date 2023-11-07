@@ -3,19 +3,15 @@ import classes from './SideBar.module.css';
 import { Link } from 'react-router-dom';
 import { AiFillHome } from 'react-icons/ai';
 import { SlCalender } from 'react-icons/sl';
-import {
-  BsFileEarmarkCheckFill,
-  BsFillCalendarDateFill,
-  BsCheckAll,
-} from 'react-icons/bs';
+import { BsBuildingFillAdd, BsCheckAll } from 'react-icons/bs';
 import { AiFillQuestionCircle } from 'react-icons/ai';
-import { FaUsers, FaUsersCog, FaUserCog } from 'react-icons/fa';
+import { FaUsers, FaUsersCog, FaUserCog, FaUserPlus } from 'react-icons/fa';
 import { FcInvite } from 'react-icons/fc';
 import { MdAnnouncement, MdReportProblem } from 'react-icons/md';
-import { FcStatistics } from 'react-icons/fc';
-import { TbAdjustmentsCheck } from 'react-icons/tb';
 import { BiSolidLogOut, BiBookOpen, BiSolidBookOpen } from 'react-icons/bi';
 import { TfiAnnouncement } from 'react-icons/tfi';
+import { PiUsersFourFill } from 'react-icons/pi';
+import { FcDataConfiguration } from 'react-icons/fc';
 
 const SideBar = () => {
   return (
@@ -55,7 +51,7 @@ const SideBar = () => {
             <p className={classes.homeText}>My Class</p>
           </Link>
           <Link className={classes.homeLink}>
-            <FaUsersCog />
+            <PiUsersFourFill />
             <p className={classes.homeText}>Other Classes</p>
           </Link>
         </div>
@@ -77,11 +73,11 @@ const SideBar = () => {
         <div className={classes.homeLinkCont}>
           <p className={classes.linkHeading}>SCHOOL ADMIN</p>
           <Link className={classes.homeLink}>
-            <BsFileEarmarkCheckFill />
+            <FaUserPlus />
             <p className={classes.homeText}>Add Teacher</p>
           </Link>
           <Link className={classes.homeLink}>
-            <FcInvite />
+            <FaUserPlus />
             <p className={classes.homeText}>Add Student</p>
           </Link>
           <Link className={classes.homeLink}>
@@ -89,11 +85,11 @@ const SideBar = () => {
             <p className={classes.homeText}>Manage Teachers</p>
           </Link>
           <Link className={classes.homeLink}>
-            <TbAdjustmentsCheck />
+            <FaUserCog />
             <p className={classes.homeText}>Manage Students</p>
           </Link>
           <Link className={classes.homeLink}>
-            <TfiAnnouncement />
+            <SlCalender />
             <p className={classes.homeText}>Exam Timetable</p>
           </Link>
           <Link className={classes.homeLink}>
@@ -104,19 +100,19 @@ const SideBar = () => {
         <div className={classes.homeLinkCont}>
           <p className={classes.linkHeading}>TEACHER</p>
           <Link className={classes.homeLink}>
-            <BsFileEarmarkCheckFill />
+            <SlCalender />
             <p className={classes.homeText}>Schedule Monthly Test</p>
           </Link>
           <Link className={classes.homeLink}>
-            <FcInvite />
+            <BsBuildingFillAdd />
             <p className={classes.homeText}>Enter Marks</p>
           </Link>
           <Link className={classes.homeLink}>
-            <BsFillCalendarDateFill />
+            <FcDataConfiguration />
             <p className={classes.homeText}>Manage Tests</p>
           </Link>
           <Link className={classes.homeLink}>
-            <FaUsersCog />
+            <FcDataConfiguration />
             <p className={classes.homeText}>Manage Term Exams</p>
           </Link>
         </div>
@@ -142,7 +138,7 @@ const SideBar = () => {
             <p className={classes.homeText}>Account Details</p>
           </Link>
           <Link className={classes.homeLink}>
-            <FcStatistics />
+            <FaUserCog />
             <p className={classes.homeText}>Account Settings</p>
           </Link>
           <Link className={classes.homeLink}>
