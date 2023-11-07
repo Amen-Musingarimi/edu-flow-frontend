@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #097969;
+  background-color: #00008b;
   gap: 4rem;
   width: 20%;
   padding: 2%;
@@ -30,7 +30,7 @@
 
 .linkHeading {
   font-size: 0.7rem;
-  color: #dfff00;
+  color: #ffd700;
 }
 
 .homeLink {
